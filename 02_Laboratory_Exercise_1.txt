@@ -1,0 +1,25 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        
+        Console.Write("Enter the pieces of apple: "); 
+        int apple;
+        apple = Convert.ToInt32(Console.ReadLine());
+        
+        Console.Write("Enter total price of " + apple + " apple(s): "); 
+        string price = Console.ReadLine(); 
+        
+        float price1 = float.Parse(price);
+        
+        int price2 = (int)Math.Floor(price1);
+        
+        
+        Console.WriteLine("The total price of 6 apple(s) is : " + price1 + "\nThe value of original price is " + price1 + "\nThe value converted price is: " +  price2); 
+        
+        Console.Write("\nPress any key to exit...");
+        Console.ReadKey();
+    }
+}
